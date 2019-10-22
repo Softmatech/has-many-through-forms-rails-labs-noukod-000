@@ -3,7 +3,7 @@
 
 <h3>Has Commented on Posts:</h3>
 <ul>
-  <% @user.posts.uniq.each do |posts| %>
+  <% @user.posts.uniq.each do |post| %>
   <li><%= link_to post.title, post %></li>
   <% end %>
 </ul>
