@@ -5,4 +5,5 @@
 <ul>
   <% @user.posts.uniq.each do |posts| %>
   <li><%= link_to post.title, post %></li>
+  <% end %>
 </ul>
