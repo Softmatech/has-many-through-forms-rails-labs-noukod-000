@@ -12,7 +12,7 @@ class Post < ActiveRecord::Base
     category_attrs.value.each do |cat_attr|
       self.categories << Category.find_or_create_by(cat_attr)
     end
-    
+
   end
 
 end
